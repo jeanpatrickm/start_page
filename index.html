@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>start page</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,800&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/icon2.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <style>
+        body {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 16px;
+            background:    #141415 ;
+            color: #ccc;
+            text-shadow: 1px 1px 2px #222;
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'JetBrains Mono', monospace;
+            color: #eee;
+            font-weight: 700;
+            padding: 8px;
+            margin: 0;
+        }
+        .w3-input {
+            color: #ccc;
+            background: none;
+            border-bottom: 4px solid  #fafafa ;
+            text-shadow: 1px 1px 2px #222;
+            transition: border 0.3s ease;
+        }
+        ul {
+            padding-left: 0;
+}
+        ul li:first-child {
+            list-style: none;
+            margin-left: 20px;
+}
+        textarea:focus,
+        input:focus {
+            outline: 0;
+            border:0;
+            border-bottom: 4px solid #ffffff;
+        }
+        ::placeholder {
+            color: #999;
+            text-shadow: 1px 1px 2px #222;
+        }       
+        .w3-ul li {
+            line-height: 20px;
+            padding: 0;
+            border: 0;
+        }
+        a,
+        a > span {
+            display: inline-flex;
+            position: relative;
+            font-size: 20px;
+            color: #999;
+            padding: 4px;
+            text-decoration: none;
+            line-height: 18px;
+            transition: color .3s ease-in-out;
+            
+        }
+        a:hover {
+            color: rgb(255, 255, 255);
+        }
+        a:hover, a:hover span {
+            color:rgb(255, 255, 255);
+}
+        a:before,
+        a:after,
+        a > span:before,
+        a > span:after {
+            content: '';
+            position: absolute;
+            transition: transform .3s ease-in-out;
+        }
+
+        .effect {
+            padding-top: 0;
+        }
+        .effect:before {
+            left: 0;
+            bottom: -3px;
+            width: 100%;
+            height: 2px;
+            background:  #6f00ee ;
+            transform: scaleX(0);
+        }
+        .effect:hover:before {
+            transform: scaleX(0.85);
+        }
+        img {
+            display: block;
+            margin-bottom: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            border-radius: 50%;
+            filter: drop-shadow(20px 5px 10px black);
+        }
+        #date {
+            height:2px;
+            margin:0px auto;;
+            padding-top:50px;
+            padding: 10px 20px 0.1em 24px;
+            border-radius: 2px;
+            text-align:center;
+            font-family: 'JetBrains Mono', monospace;
+            text-transform:uppercase;
+            font-size:16px;
+            color: #eee;
+            width:150px;    
+        }
+        ion-icon {
+                font-size: 20px;
+    
+}
+        .social-icon{
+            transition: color 0.2s;
+            top: 5px;
+            left: 5px;
+            position: relative;
+
+        }
+        @media screen and (max-width: 600px) {
+    body {
+        font-size: 10px;
+    }
+
+    #date {
+        font-size: 12px;
+        width: 120px;
+    }
+
+    .w3-container {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    img {
+        width: 50%;
+    }
+
+    .w3-cell-row {
+        display: block;
+    }
+
+    .w3-cell {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    a,
+    a>span {
+        font-size: 15px;
+    }
+}
+        
+    }
+    </style>
+</head>
+ 
+<body>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <div id="date"><script language="Javascript">
+        var dayName = new Array ("Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado")
+        var monName = new Array ("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro")
+        var now = new Date
+        document.write(now.getDate() + " de " + monName[now.getMonth()] + " " + dayName[now.getDay()])
+    </script>
+</div>
+    <div class="w3-container w3-display-middle w3-centered" style="width: 22em; margin-top: -4em;">
+        <img src="assets/icon2.png"/>
+        <form method="get" action="https://www.google.com/search" target="_blank">
+            <input class="w3-input w3-center w3-section" type="text" name="q" placeholder="Pesquisar" />
+        </form>
+        <div class="w3-cell-row">
+            <div class="w3-container w3-cell w3-mobile">
+                <ul class="w3-ul w3-center">
+                    <li><h4>001</h4></li>
+                   <li> <a accesskey="y"  href="https://www.youtube.com/"  target="_blank">
+                    <ion-icon name="logo-youtube"></ion-icon> <span> YouTube </span>
+                </a>
+                <li> 
+                    <a accesskey="n" href="https://aniwave.to/home" target="_blank"> 
+                        <ion-icon name="desktop-outline"></ion-icon><span>AniWave</span>
+                    </a>
+                </li>
+                    <li><a accesskey="t" href="https://www.twitch.tv/" target="_blank">
+                        <ion-icon name="logo-twitch"></ion-icon><span>TwitchTv</span>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w3-container w3-cell w3-mobile">
+                <ul class="w3-ul w3-center">
+                    <li><h4>002</h4></li>
+                    <li> 
+                        <a href="https://web.whatsapp.com/" target="_blank"> 
+                            <ion-icon name="logo-whatsapp"></ion-icon><span>WhatsApp</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://chatgpt.com/" target="_blank">
+                            <ion-icon name="chatbox-ellipses-outline"></ion-icon><span>Chatgpt</span>
+                        </a>
+                    </li>
+                    <li><a href="https://github.com/jeanpatrickm" target="_blank"> 
+                        <ion-icon name="logo-github"></ion-icon> <span>Github</span> 
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+ 
+</html>
