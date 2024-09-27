@@ -1,0 +1,247 @@
+body {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1rem; /* 16px como base */
+    background: #0a0e14;
+    color: #ccc;
+    text-shadow: 1px 1px 2px #222;
+    margin: 0;
+    padding-top: 3rem; 
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'JetBrains Mono', monospace;
+    color: #eee;
+    font-weight: 700;
+    padding: 0.5rem;
+    margin: 0;
+}
+
+.w3-input {
+    color: #ccc;
+    background: none;
+    border: none;
+    border-bottom: 4px solid #5a1b9a;
+    text-shadow: 1px 1px 2px #222;
+    transition: border 0.3s ease;
+    padding: 0.5rem 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+ul li:first-child {
+    margin-left: 1.25rem; /* 20px */
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+    border: none;
+    border-bottom: 4px solid #5a1b9a;
+}
+
+::placeholder {
+    color: #999;
+    text-shadow: 1px 1px 2px #222;
+}
+
+.w3-ul li {
+    line-height: 1.25rem; /* 20px */
+    padding: 0;
+    border: none;
+}
+
+a,
+a > span {
+    display: inline-flex;
+    position: relative;
+    font-size: 1.25rem; /* 20px */
+    color: #fafafa;
+    padding: 0.25rem;
+    text-decoration: none;
+    line-height: 1.125rem; /* 18px */
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #5a1b9a;
+}
+
+a:before,
+a:after,
+a > span:before,
+a > span:after {
+    content: '';
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+}
+
+.effect {
+    padding-top: 0;
+}
+
+.effect:before {
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background: #5a1b9a;
+    transform: scaleX(0);
+}
+
+.effect:hover:before {
+    transform: scaleX(0.85);
+}
+
+img {
+    display: block;
+    margin: 2rem auto;
+    width: 50%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.6s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+#date {
+    position: fixed; 
+    top: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background: rgba(10, 14, 20, 0.9); 
+    padding: 0.5rem 1rem; 
+    border-radius: 0 0 8px 8px; 
+    text-align: center;
+    font-family: 'JetBrains Mono', monospace;
+    text-transform: uppercase;
+    font-size: 1rem; 
+    color: #fafafa;
+}
+
+#date:hover {
+    color: #5a1b9a;
+    transition: color 0.3s ease;
+}
+
+ion-icon {
+    font-size: 1.25rem; /* 20px */
+}
+
+.social-icon {
+    transition: color 0.2s;
+    position: relative;
+    top: 0.3125rem; /* 5px */
+    left: 0.3125rem; /* 5px */
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem; /* 14.4px */
+        padding-top: 2.5rem; 
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    img {
+        width: 60%;
+        max-width: 150px;
+    }
+
+    a,
+    a > span {
+        font-size: 1.125rem; /* 18px */
+    }
+
+    #date {
+        font-size: 0.9rem; /* 14.4px */
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+/* Dispositivos Móveis */
+@media (max-width: 480px) {
+    body {
+        font-size: 0.8rem; /* 12.8px */
+        padding-top: 2rem; 
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    img {
+        width: 70%;
+        max-width: 120px;
+    }
+
+    a,
+    a > span {
+        font-size: 1rem; /* 16px */
+    }
+
+    #date {
+        font-size: 0.8rem; /* 12.8px */
+        padding: 0.3rem 0.6rem;
+    }
+
+    .social-icon {
+        top: 0.2rem; /* 3px */
+        left: 0.2rem; /* 3px */
+    }
+}
+
+/*(Desktops) */
+@media (min-width: 1200px) {
+    body {
+        font-size: 1.125rem; /* 18px */
+        padding-top: 4rem; 
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    img {
+        width: 45%;
+        max-width: 250px;
+    }
+
+    a,
+    a > span {
+        font-size: 1.5rem; /* 24px */
+    }
+
+    #date {
+        font-size: 1.125rem; /* 18px */
+        padding: 0.6rem 1.2rem;
+    }
+}
